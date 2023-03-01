@@ -61,7 +61,7 @@ li a:hover:not(.active) {
 	
 </body>
 
-\\\\
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -338,7 +338,18 @@ body .footer .content > div .image {
 }
 
 @-webkit-keyframes bubble-size {
-  100%, 75% {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
     width: var(--size, 4rem);
     height: var(--size, 4rem);
   }
@@ -347,19 +358,8 @@ body .footer .content > div .image {
     height: 0rem;
   }
 }
-
-@keyframes bubble-size {
-  100%, 75% {
-    width: var(--size, 4rem);
-    height: var(--size, 4rem);
-  }
-  100% {
-    width: 0rem;
-    height: 0rem;
-  }
-}
 @-webkit-keyframes bubble-move {
-  100% {
+  0% {
     bottom: -4rem;
   }
   100% {
@@ -367,7 +367,7 @@ body .footer .content > div .image {
   }
 }
 @keyframes bubble-move {
-  100% {
+  0% {
     bottom: -4rem;
   }
   100% {
