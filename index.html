@@ -896,3 +896,184 @@ clickEffect();//调用特效函数
 	</head>
 	
 	
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>L Y N</title>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+        <!-- partial:index.partial.html -->
+        <div class="main"></div>
+        <div class="footer">
+            <div class="content">
+                <div>
+                    <div>
+                        <b>开发人名单</b>
+                        <a href="#">张强</a>
+                        <a href="#">L Y N</a>
+                        <a href="#">豫见</a>
+                        <a href="#">周师傅</a>
+                        <a href="#">蓝伊宁</a>
+                    </div>
+                   
+                    <div>
+                        <b>所有更改权</b>
+                        <a href="#">张强</a>
+                        <a href="#"></a>
+                        <a href="#">蓝伊宁</a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <b>联系我们</b>
+                        <a href="#">+86 178 16001 917</a>
+                        <a href="#">3591957105@qq.com</a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <b>关于网站</b>
+                        <a href="#">免责声明</a>
+                        <a href="#">法律通告</a>
+                        <a href="#">一般规定</a>
+                        <a href="#"></a>
+                    </div>
+                  
+                </div>
+                <div>
+                    <a class="image" href="https://wechatusers.github.io/" target="_blank" style="background-image: url(&quot;">豫见</a>
+                    <p>NVIDIA RTX 虚拟视觉提供支持</p>
+                </div>
+            </div>
+        </div>
+        <svg style="position:fixed; top:100vh">
+            <defs>
+                <filter id="blob">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
+                </filter>
+            </defs>
+        </svg>
+</html>
+
+<style>
+
+body {
+  display:bacd0.png;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "main" "footer";
+  overflow-x: hidden;
+  background: #F5F7FA;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+body .footer {
+  z-index: 1;
+  --footer-background:#ED5565;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+body .footer .content a, body .footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+body .footer .content b {
+  color: white;
+}
+body .footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+body .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+body .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+body .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+
+  
+  </style>
