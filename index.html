@@ -83,13 +83,82 @@ body {
 </style>
 </head>
 
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/轮播图.css">
+    <title>轮播图</title>
+
+    <style>
+        /* 
+        轮播图demo
+        */
+        .demo{
+            width:1200px;
+            height:900px;
+            margin:0px auto;
+            /* background-color:aquamarine; */
+            overflow: hidden;/*用于隐藏超出展示容器的内容部分*/
+        }
+        .demo1{
+            width:6000px;
+            height:400px;
+            margin:0px auto;
+            animation:text 30s infinite  linear;
+            font-size:0px;/*消除图片间隔*/
+            
+        }
+        .demo1 img{
+            width:1200px;
+            height:400px;
+            float:left;
+        }
+        @keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+            0%,10%{
+                margin-left:0px;
+            }
+            20%,30%{
+                margin-left:-1200px;
+            }
+            40%,50%{
+                margin-left:-2400px;
+            }
+            60%,70%{
+                margin-left:-3600px;
+            }
+            80%,90%{
+                margin-left:-4800px;
+            }
+        }
+        
+        
+    </style>
+</head>
 
 <body>
-	
-	<h1 align="center">初见</h1>
-	
+    <!-- 创建外部展示容器 -->
+    <div class="demo">
+        <!-- 创建图片存储容器 -->
+        <div class="demo1">
+            <!-- 引入轮播图图片 -->
+            <img src="https://" alt="">
+            <img src="https://" alt="">
+            <img src="https://" alt="">
+            <img src="https://" alt="">
+            <img src="https://WeChatusers.github.io/" alt="">
+        </div>
+    </div>
+
+
 </body>
+
+</html>
+
+
 
 <h1 align="center"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
