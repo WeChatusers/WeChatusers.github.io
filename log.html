@@ -40,7 +40,7 @@ li a:hover:not(.active) {
   <li><a href="https://wechatusers.github.io/LanYining.html">L Y N</a></li>
   <li><a href="A2.html">初见💕网络报表</a></li>
   <li><a href="https://www.henan.gov.cn/ywdt/">新闻</a></li>
-  <li><a href="https://WeChatusers.github.io/log.html">公告-日志</a></li>
+  <li><a href="https://WeChatusers.github.io/log.html"><kbd>公告-日志</kbd></a></li>
   <li><a href="法律通告.html">隐私政策</a></li>
   <li style="float:right"><a class="active" href="A3.html">关于初见</a></li>
 </ul>
@@ -90,3 +90,23 @@ li a:hover:not(.active) {
          <p><kbd>2023-4-3-16：21</kbd>   更新完成</p>
          <p><kbd>2023-4-3-16：30</kbd>   修复了一些莫名其妙的问题</p>
       </div>
+
+    <script>
+ var phoneWidth = parseInt(window.screen.width);
+ var phoneHeight = parseInt(window.screen.height);
+ var phoneScale = phoneWidth/1250;//除以的值按手机的物理分辨率
+ var ua = navigator.userAgent;
+ if (/Android (\d+\.\d+)/.test(ua)) {
+ 　　var version = parseFloat(RegExp.$1);
+ 　　// andriod 2.3
+ 　　if (version > 2.3) {
+ 　　　　document.write('<meta name="viewport" content="width=device-width,initial-scale='+phoneScale+',minimum-scale='+phoneScale+',maximum-scale='+phoneScale+',user-scalable=no">');
+ 　　// andriod 2.3以上
+　　 } else {
+ 　　　　document.write('<meta name="viewport" content="width=device-width,user-scalable=no">');
+ 　　}
+ // 其他系统
+ } else {
+ 　　document.write('<meta name="viewport" content="width=device-width, initial-scale='+phoneScale+',minimum-scale='+phoneScale+',maximum-scale ='+phoneScale +',user-scalable=no,">');
+ }
+</script>  
