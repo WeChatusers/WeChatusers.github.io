@@ -3,6 +3,113 @@
 <head>
 <title>Banyuan Technology</title>
 <meta charset="UTF-8">
+    <html>
+
+<head></head>
+
+<body>
+    <div id="mainnav" class="darknav">
+        <div class="content">
+            <div class="logo"></div>
+            <ul class="nav">
+                <li><a href="index.html" target="_self" class="on">首页</a></li>
+                <li><a href="service.html" target="_self" class="off">服务</a></li>
+                <li><a href="case.html" target="_self" class="off">案例</a></li>
+                <li><a href="about.html" target="_self" class="off">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主banner-->
+    <div class="block">
+        <div id="hometopbanner" class="topbanner">
+            <div class="title">Banyuan Technology</div>
+            <div class="subtitle"> WeChatusers.github.io</div>
+        </div>
+    </div>
+    <style>
+        /*全局样式*/
+        body {
+        	margin:0px; padding:0px; background-color:#fff;
+        	font-family: "PingFang SC","Helvetica Neue","Helvetica","STHeitiSC-Light","Arial","sans-serif",'Microsoft YaHei';
+        	overflow:auto;
+        }
+        a {
+        	text-decoration:none;
+        }
+        img { border:none;}
+        /*主导航*/
+        #mainnav { height:120px; width:100%; position:fixed; top:0px; z-index:8000;}
+        #mainnav .logo { width:80px; height:40px; background-repeat:no-repeat; background-size:contain; margin-top:0px; float:left;}
+        #mainnav .content { width:1120px; height:40px; position:relative; margin:40px auto; }
+        #mainnav .nav { height:40px; float:right; margin:0px; padding:0px; list-style:none;}
+        #mainnav .nav li { font-size:16px; margin:0px 0px 0px 40px; cursor:pointer; float:left;}
+        #mainnav .nav li .on { font-weight:normal; line-height:40px; height:36px; display:block;}
+        #mainnav .nav li .off { font-weight:normal; line-height:40px; height:36px; display:block;}
+        
+        .darknav { border-bottom:1px solid rgba(255,255,255,0.20);}
+        .darknav .on { color:#fff;  border-bottom: 2px solid #FFF;}
+        .darknav .off { color:#fff; }
+        .darknav .logo { background-image:url(https://wechatusers.github.io/Banyuan Technology.png);}
+        
+        .lightnav { background-color:rgba(255,255,255,0.96); /*border-bottom: 1px solid #EEE;*/ box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10); }
+        .lightnav .on { color:#2C3E50;  border-bottom: 2px solid #2C3E50;}
+        .lightnav .off { color:#2C3E50; }
+        .lightnav .logo { background-image:url(https://wechatusers.github.io/Banyuan Technology.png);}
+        
+        /*区块*/
+        .block { width:100%; position:relative; float:left; min-width:1200px; }
+        .col { position:relative; margin:40px auto 0px auto; width:1140px;}
+        .colws { position:relative; margin:40px auto 0px auto; width:1160px;}
+        .content { position:relative; margin:40px auto 0px auto; width:1120px;}
+        .col3 { width:360px; margin:0 10px; float:left; }
+        .col3ws { width:340px; margin:0 20px; float:left; }
+        .col4 { width:265px; margin:0 10px; float:left; }
+        .col4ws { width:249px; padding:0 20px; float:left; }
+        
+        .jobcol { position:relative; margin:0px auto 0px auto; width:1200px;}
+        .jobcol3 { width:319px; padding:40px 40px 80px 40px; float:left; height:660px; }
+        .card { background: #FFFFFF; box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.06);}
+        .cardcontent { padding:0px 20px 30px 20px;}
+        .link_arrow { width:40px; height:40px; background-image:url(https://wechatusers.github.io/Banyuan Technology.png); margin:10px 0px 10px -10px; float:left;}
+        /*大区块标题*/
+        h1 {
+        	position:relative; margin:100px auto 0px auto; width:100%; width:1120px; 
+        	font-size:36px; line-height:36px; padding-bottom:20px; text-align:center; color:#2C3E50; font-weight:400; background-image:url(https://wechatusers.github.io/Banyuan Technology.png); background-repeat:no-repeat; background-position:bottom center;
+        }
+        h2 {
+        	position:relative; width:1120px; margin:30px auto 0px auto;
+            font-size:14px; color:#A1B1BC; text-align:center; line-height:24px; font-weight:300;
+        }
+        .bigtitle { margin:10px 0px 20px 0px; font-size:36px; line-height:36px; padding-bottom:20px; color:#2C3E50; font-weight:400;}
+        .secondarytitle { margin:40px 0px 20px 0px; font-size:24px; line-height:24px; color:#2C3E50; font-weight:300;}
+        .about p { font-size:14px; color:#A1B1BC; line-height:24px; margin:0px 0px 10px 0px; font-weight:300; padding:0px;}
+        .smalltitle { font-size:18px; color:#2C3E50; line-height:20px; margin:20px 0px 20px 0px; }
+        .jobtitle { font-size:24px; color:#2C3E50; line-height:24px; text-align:center; margin:40px 0px 40px 0px; }
+        .servicetitle { font-size:18px; color:#2C3E50; line-height:40px; margin:0px 0px 20px 0px; text-indent:50px; background-position:left center; background-repeat:no-repeat; }
+        .casetitle { font-size:16px; color:#2C3E50; line-height:16px; margin:20px 0px 16px 0px; }
+        
+        .dateinfo { font-size:14px; color:#A1B1BC; line-height:24px; margin:0px 0px 10px 0px; font-weight:300;}
+        .normaltext { font-size:14px; color:#A1B1BC; line-height:22px; margin:0px 0px 0px 0px; min-height:40px; font-weight:300;}
+        
+        
+        /*两栏*/
+        .lefttext { width: 530px; float:left; margin-right:60px;}
+        .rightimg { width: 530px; float:left;}
+        .leftimg { width: 530px; float:left; margin-right:60px;}
+        .righttext { width: 530px; float:left;}
+        
+        /*首页*/
+        #hometopbanner { width:100%; min-width:1200px; height:800px; background-image:url(https://wechatusers.github.io/Banyuan Technology.png); background-position:top center; background-repeat:no-repeat; background-color:#2D3E50;}
+        .topbanner .title { width:100%; padding-top:360px; margin-bottom:30px; position:relative; font-size:64px; line-height:80px; text-align:center; color:#fff; font-weight:bold;}
+        .topbanner .subtitle { font-size:24px; line-height:30px; text-align:center; color:#fff; font-weight:lighter; }
+        .homebanner2 { width:100%; min-width:1200px; height:220px; background-image: url(https://wechatusers.github.io/Banyuan Technology.png); background-position:top center; background-repeat:no-repeat; background-color:#2D3E50;}
+        .servicefield { height:220px; }
+        .number { font-size:40px; color:#000; line-height:40px; margin:60px 0px 30px 0px; }
+        
+    </style>
+</body>
+
+</html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
