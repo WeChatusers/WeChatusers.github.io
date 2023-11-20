@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>初见-设计 </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1>通过设计实现卓越</h1>
+  <p>让我们携手加速技术突破，构建美好世界。</p>
+  <blockquote class="blockquote">
+    <p>了解嵌入式技术的一系列应用以及完全集成的解决方案</p>
+    <footer class="blockquote-footer">L Y N</footer>
+  </blockquote>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>初见</title> 
+<style>
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+	margin-top:-9px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 100;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="ACC2.jpg" alt="Norway" width="1440" height="580">
+  <div class="center">    </div>
+</div>
+
+</body>
+</html>
+<script>
+ var phoneWidth = parseInt(window.screen.width);
+ var phoneHeight = parseInt(window.screen.height);
+ var phoneScale = phoneWidth/1250;//除以的值按手机的物理分辨率
+ var ua = navigator.userAgent;
+ if (/Android (\d+\.\d+)/.test(ua)) {
+ 　　var version = parseFloat(RegExp.$1);
+ 　　// andriod 2.3
+ 　　if (version > 2.3) {
+ 　　　　document.write('<meta name="viewport" content="width=device-width,initial-scale='+phoneScale+',minimum-scale='+phoneScale+',maximum-scale='+phoneScale+',user-scalable=no">');
+ 　　// andriod 2.3以上
+　　 } else {
+ 　　　　document.write('<meta name="viewport" content="width=device-width,user-scalable=no">');
+ 　　}
+ // 其他系统
+ } else {
+ 　　document.write('<meta name="viewport" content="width=device-width, initial-scale='+phoneScale+',minimum-scale='+phoneScale+',maximum-scale ='+phoneScale +',user-scalable=no,">');
+ }
+</script>  
