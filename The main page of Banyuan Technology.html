@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav_left">
+                <img src="https://www.banyuan.site/Banyuan Technology.png" alt="">
+                <div class="logo_text">
+                    <span>板源</span>
+                    <span>www.banyuan.site</span>
+                </div>
+            </div>
+
+            <div id="main">
+                <ul id="list">
+                    <li>
+                        <a href="www.banyuan.site">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">关于</a>
+                        <ul class="two">
+                            <li><a href="">公告</a></li>
+                            <li><a href="">隐私</a></li>
+                            <li><a href="">文化</a></li>
+                            <li><a href="">开发者</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="#">工程动态</a>
+                    </li>
+
+                    <li>
+                        <a href="#">设计图欣赏</a>
+                    </li>
+                    <li>
+                        <a href="#">浙江新闻</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="nav">
+                <a href="">公司简介</a>
+                <a href="">荣誉资质</a>
+                <a href="">企业文化</a>
+                <a href="">联系我们</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <div class="container">
+            <div class="first_area">
+                <h2>更 懂 你 的 设 计 师</h2>
+                <p>在没有错误日志的情况下诊断任何问题
+                  无异于闭眼开车
+                </p>
+              
+                <img src="图片" alt="" class="map">
+            </div>
+
+            <div class="tools">
+                <div class="item">
+                    <span>地址：岱山</span>
+                    <img src="img/local.png" alt="">
+                </div>
+                <div class="item">
+                    <span>电话：申请中...</span>
+                    <img src="img/tel.png" alt="">
+                </div>
+                <div class="item">
+                    <span>网址www.banyuan.site</span>
+                    <img src="img/earth.png" alt="">
+                </div>
+            </div>
+
+           
+
+
+<style>
+  body{background-color:#eee}
+.container{width:1000px;margin:0 auto}
+header{width:100%;height:60px;z-index:999}
+header .container{display:flex;height:100%}
+header .nav_left{display:flex;width:400px;height:100%}
+header .nav_left img{width:200px;height:50px;margin-top:5px;padding-right:10px;border-right:1px solid #cccc}
+header .nav_left .logo_text{padding-left:10px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center}
+header .container .nav_right{width:600px;height:100%}
+.two{width:90px;height:80px;display:flex;flex-direction:column;justify-content:center}
+#main{text-align:center}
+#main a{text-decoration:none;display:inline-block;height:60px;width:100px;line-height:60px}
+ul{list-style:none}
+#list{display:inline-block;margin:0;padding:0;vertical-align:bottom;height:60px;width:600px}
+#list li{float:left;height:60px;line-height:60px}
+a:hover{color:#ffff}
+#list li ul{display:none;position:absolute}
+#list li:hover ul{display:block}
+.two{z-index:99999;background-color:#ffff;height:240px;width:100px}
+.two li,.two li a{width:100px;height:60px;line-height:60px;text-align:center}
+.two li a:hover{color:#fff}
+#list li:hover,#list>li:hover .two li:hover{background-color:#03ae78}
+.banner{padding:0;margin:0;width:100%;height:400px;background:url(../img/banner.jpg) no-repeat;background-size:100% 100%;position:relative}
+.banner .container{position:absolute;left:0;bottom:0;width:100%;height:60px;margin:0 auto}
+.nav{display:flex;width:100%;height:60px;align-items:center;line-height:60px;text-align:center;background-color:rgba(0,0,0,.4);margin:0 auto;padding:0 17%;box-sizing:border-box}
+.nav a{flex:1;color:#ffff}
+.nav a:hover{background-color:#03ae78}
+.content .container{background-color:#fff;padding:20px;box-sizing:border-box}
+.first_area{width:100%;text-align:center}
+.content .container h2{text-align:center;margin-bottom:20px;font-size:26px;font-weight:normal}
+.content .container p{color:#333;line-height:2}
+.container .map{width:95%;margin-bottom:50px}
+.content .tools{display:flex;height:100px;align-items:center;justify-content:space-around;margin-bottom:100px}
+.tools .item{width:280px;height:100%;border:1px solid #c0c0cc;padding:20px;box-sizing:border-box;position:relative;font-size:12px;text-align:center;color:#666}
+.tools .item img{position:absolute;left:50%;bottom:-30px;transform:translateX(-50%)}
+.two_area{width:90%;margin:0 auto}
+.two_area .two_title{width:100%;background-color:#03ae78;margin:0 auto;height:30px;padding:5px;line-height:30px;color:#fff}
+.two_area .two_title img{height:30px;margin-right:10px}
+.two_container .list{width:700px;margin:0 auto;display:flex;flex-wrap:wrap}
+.two_container .two_item{width:300px;height:70px;margin:30px 50px 0 0;display:flex;flex-direction:column;color:#666}
+.two_container .two_item input{display:inline-block;height:25px;margin-top:10px;border-radius:2px;border:1px solid #c0c0cc}
+.two_container .submit{width:700px;background-color:#03ae78;color:#fff;height:30px;line-height:30px;text-align:center;margin:0 auto;border-radius:5px;margin-top:5px}
+footer{width:100%}
+footer .footer_top{height:60px;background-color:#03ae78}
+footer .bot_nav{display:flex;height:60px;line-height:40px;text-align:center}
+footer .bot_nav a{flex:1;color:#fff;width:100%;height:40px;line-height:40px}
+.footer_bottom{width:100%;height:300px;background-color:#d7ebe2}
+.footer_bottom .container{height:100%;background:url(../img/footer4.png) no-repeat}
+  </style>
