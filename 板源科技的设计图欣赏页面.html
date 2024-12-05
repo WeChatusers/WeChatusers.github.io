@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="板源科技的设计图欣赏页面">
+    <title>板源科技的设计图欣赏页面</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 基本样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自动填充列 */
+            gap: 16px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .photo-wall img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .photo-wall img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 模态框样式 */
+        /* 模态框容器 */
+        .modal {
+            display: none;  /* 默认隐藏 */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+            padding-top: 60px;
+        }
+
+        /* 模态框内容 */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 8px;
+        }
+
+        /* 关闭按钮 */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>板源科技的设计图欣赏页面</h1>
+    </header>
+
+    <!-- Photo Wall Section -->
+    <div class="photo-wall">
+        <!-- 图片1 -->
+        <div>
+            <img src="https://www.banyuan.site/IMG_4843(20241205-204712).JPG" alt="照片1" class="photo" data-src="https://www.banyuan.site/IMG_4843(20241205-204712).JPG">
+        </div>
+        <!-- 图片2 -->
+        <div>
+            <img src="https://www.banyuan.site/" alt="照片2" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片3 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片3" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片4 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片4" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片5 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片5" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片6 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片6" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+    <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片1" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片2 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片2" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片3 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片3" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片4 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片4" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片5 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片5" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片6 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片6" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+<div>
+            <img src="https://via.placeholder.com/300x200" alt="照片1" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片2 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片2" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片3 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片3" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片4 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片4" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片5 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片5" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片6 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片6" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+      <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片1" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片2 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片2" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片3 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片3" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片4 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片4" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片5 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片5" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+        <!-- 图片6 -->
+        <div>
+            <img src="https://via.placeholder.com/300x200" alt="照片6" class="photo" data-src="https://via.placeholder.com/800x600">
+        </div>
+    <!-- 模态框 -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 板源科技的设计图欣赏页面 | All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 获取模态框和图片元素
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var span = document.getElementsByClassName("close")[0];
+
+        // 获取所有的图片
+        var images = document.querySelectorAll(".photo");
+
+        // 为每个图片添加点击事件
+        images.forEach(function(img) {
+            img.onclick = function() {
+                var src = this.getAttribute("data-src");  // 获取data-src属性中的大图链接
+                modal.style.display = "block";  // 显示模态框
+                modalImg.src = src;  // 设置模态框中的图片为点击的图片
+            };
+        });
+
+        // 点击关闭按钮关闭模态框
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // 点击模态框外部区域关闭模态框
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
